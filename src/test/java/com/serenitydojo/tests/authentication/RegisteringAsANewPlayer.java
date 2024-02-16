@@ -19,7 +19,6 @@ public class RegisteringAsANewPlayer {
 
     WebDriver driver;
     Player player;
-    WebDriverWait wait;
 
     @BeforeMethod
     public void setupDriver() {
