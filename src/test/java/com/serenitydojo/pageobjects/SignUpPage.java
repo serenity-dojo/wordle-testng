@@ -22,4 +22,8 @@ public class SignUpPage extends WordlePageComponent {
         driver.findElement(PASSWORD_FIELD).sendKeys(player.password());
         driver.findElement(CREATE_ACCOUNT_BUTTON).click();
     }
+
+    public String toasterMessage() {
+        return new ToastorPopup(driver).getMessage();
+    }
 }

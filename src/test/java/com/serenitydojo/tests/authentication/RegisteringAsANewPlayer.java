@@ -25,7 +25,7 @@ public class RegisteringAsANewPlayer {
         //        driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions().addArguments("headless");
         // Option 2
-        driver = new ChromeDriver(options);
+//        driver = new ChromeDriver(options);
         // Option 3 (W3C standards)
         driver = RemoteWebDriver.builder()
                 .oneOf(options)

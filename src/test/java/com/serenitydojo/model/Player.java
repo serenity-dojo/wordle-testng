@@ -9,4 +9,8 @@ public record Player(String name, String email, String password) {
                 "T0Ps3cr&t");
     }
 
+    public Player withEmail(String email) {
+        return new Player(name, email, password);
+    }
+
 }

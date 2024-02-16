@@ -26,6 +26,5 @@ public class LoginPage extends WordlePageComponent {
         driver.findElement(NAME_FIELD).sendKeys(player.name());
         driver.findElement(PASSWORD_FIELD).sendKeys(player.password());
         driver.findElement(LOGIN_BUTTON).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(GAME_TITLE));
     }
 }
