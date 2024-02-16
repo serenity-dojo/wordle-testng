@@ -13,4 +13,8 @@ public record Player(String name, String email, String password) {
         return new Player(name, email, password);
     }
 
+    public Player withPassword(String password) {
+        return new Player(name, email, password);
+    }
+
 }
