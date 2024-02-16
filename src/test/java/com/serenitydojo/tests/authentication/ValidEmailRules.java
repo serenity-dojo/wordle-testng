@@ -1,19 +1,14 @@
 package com.serenitydojo.tests.authentication;
 
 import com.serenitydojo.model.Player;
-import com.serenitydojo.pageobjects.HowToPlayModal;
-import com.serenitydojo.pageobjects.LoginPage;
 import com.serenitydojo.pageobjects.SignUpPage;
 import com.serenitydojo.pageobjects.WebDriverProvider;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class UsernameAndPasswordRules {
+public class ValidEmailRules {
 
     WebDriver driver;
     Player player;
