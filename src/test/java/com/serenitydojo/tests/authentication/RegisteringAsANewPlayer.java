@@ -4,14 +4,13 @@ import com.serenitydojo.model.Player;
 import com.serenitydojo.pageobjects.HowToPlayModal;
 import com.serenitydojo.pageobjects.LoginPage;
 import com.serenitydojo.pageobjects.SignUpPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -22,7 +21,15 @@ public class RegisteringAsANewPlayer {
 
     @BeforeMethod
     public void setupDriver() {
-        driver = new ChromeDriver();
+        // Option 1
+        //        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions().addArguments("headless");
+        // Option 2
+        driver = new ChromeDriver(options);
+        // Option 3 (W3C standards)
+        driver = RemoteWebDriver.builder()
+                .oneOf(options)
+                .build();
     }
 
     @AfterMethod
