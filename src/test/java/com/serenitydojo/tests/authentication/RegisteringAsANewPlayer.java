@@ -4,6 +4,7 @@ import com.serenitydojo.model.Player;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -23,6 +24,7 @@ public class RegisteringAsANewPlayer {
     @BeforeMethod
     public void setupDriver() {
         driver = new ChromeDriver();
+
         wait = new WebDriverWait(driver, Duration.of(3,ChronoUnit.SECONDS));
     }
 
