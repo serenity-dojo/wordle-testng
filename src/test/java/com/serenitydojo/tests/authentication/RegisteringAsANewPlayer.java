@@ -5,6 +5,7 @@ import com.serenitydojo.pageobjects.HowToPlayModal;
 import com.serenitydojo.pageobjects.LoginPage;
 import com.serenitydojo.pageobjects.SignUpPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,6 +24,7 @@ public class RegisteringAsANewPlayer {
     @BeforeMethod
     public void setupDriver() {
         driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1200, 800));
     }
 
     @AfterMethod
