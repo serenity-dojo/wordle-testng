@@ -5,7 +5,6 @@ import com.serenitydojo.pageobjects.HowToPlayModal;
 import com.serenitydojo.pageobjects.LoginPage;
 import com.serenitydojo.pageobjects.SignUpPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
